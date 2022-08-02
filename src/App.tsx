@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Navbar />
+      <section id="section1" style={{ height: "2000px" }}>
+        SECTION 1
+      </section>
+
+      <section id="section2" style={{ height: "2000px" }}>
+        SECTION 2
+      </section>
+
+      <section id="section3" style={{ height: "2000px" }}>
+        SECTION 3
+      </section>
+    </>
+  )
 }
 
 export default App;
