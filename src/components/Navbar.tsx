@@ -1,9 +1,9 @@
+import Link from "./Link";
+
 const Navbar = () => {
   return (
     <nav>
-      <a href="#section1" style={{ marginRight: "20px" }}>
-        Go to section 1
-      </a>
+      <Link text="section 1"/>
       <a href="#section2" style={{ marginRight: "20px" }}>
         Go to section 2
       </a>
