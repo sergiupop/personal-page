@@ -3,20 +3,21 @@ import Navbar from './components/Navbar';
 const App = () => {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
       <Navbar />
-      <section id="section1" style={{ height: "2000px" }}>
-        SECTION 1
+      <section id="homeSection" style={{ height: "2000px" }}>
+        home
       </section>
 
-      <section id="section2" style={{ height: "2000px" }}>
-        SECTION 2
+      <section id="aboutMeSection" style={{ height: "2000px" }}>
+        about me
       </section>
 
-      <section id="section3" style={{ height: "2000px" }}>
-        SECTION 3
+      <section id="portfolioSection" style={{ height: "2000px" }}>
+        portfolio
+      </section>
+
+      <section id="contactSection" style={{ height: "2000px" }}>
+        contact
       </section>
     </>
   )

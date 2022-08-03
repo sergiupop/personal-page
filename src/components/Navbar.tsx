@@ -3,13 +3,10 @@ import Link from "./Link";
 const Navbar = () => {
   return (
     <nav>
-      <Link text="section 1"/>
-      <a href="#section2" style={{ marginRight: "20px" }}>
-        Go to section 2
-      </a>
-      <a href="#section3">
-        Go to section 3
-      </a>
+      <Link text="home" href="homeSection" />
+      <Link text="about me" href="aboutMeSection" />
+      <Link text="portfolio" href="portfolioSection" />
+      <Link text="contact" href="contactSection" />
     </nav>
   )
 }
