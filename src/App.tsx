@@ -1,12 +1,11 @@
+import Home from './components/Home';
 import Navbar from './components/Navbar';
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <section id="homeSection" style={{ height: "2000px" }}>
-        home
-      </section>
+      <Home />
 
       <section id="aboutMeSection" style={{ height: "2000px" }}>
         about me
