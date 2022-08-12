@@ -6,7 +6,7 @@ type ReactPortalProps = {
   wrapperElementId?: string;
 }
 
-const ReactPortal = ({ children, wrapperElementId = "portal-wrapper" }: PropsWithChildren<ReactPortalProps>) => {
+const Portal = ({ children, wrapperElementId = "portal-wrapper" }: PropsWithChildren<ReactPortalProps>) => {
   const [wrapperElement, setWrapperElement] = useState<HTMLElement | null>(null);
 
   useLayoutEffect(() => {
@@ -27,4 +27,4 @@ const ReactPortal = ({ children, wrapperElementId = "portal-wrapper" }: PropsWit
   return createPortal(children, wrapperElement);
 }
 
-export default ReactPortal;
+export default Portal;
