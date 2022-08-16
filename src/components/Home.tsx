@@ -2,6 +2,7 @@ import { useState } from "react";
 import selfImage from "../images/pyr.jpg";
 import BioListItem from "./BioListItem";
 import BrandIcon from "./BrandIcon";
+import Link from "./Link";
 import Modal from "./Modal";
 
 const Home = () => {
@@ -26,7 +27,7 @@ const Home = () => {
             <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Item1" />
             <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Item2" />
             <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Item3" />
-            <BrandIcon iconName="github" />
+            <Link href="contactSection"><BrandIcon iconName="twitter" /></Link>
             <button onClick={() => setIsModalOpen(true)}>Open Modal</button> 
             <Modal isOpen={isModalOpen} handleClose={() => setIsModalOpen(false)}>This is modal content!</Modal>
           </div>
