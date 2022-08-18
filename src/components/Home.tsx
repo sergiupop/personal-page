@@ -23,14 +23,14 @@ const Home = () => {
               I'm
             </h2>
           </div>
-          <div className="ml-4 mt-4">
+          <ul className="ml-4 mt-4">
             <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Item1" />
             <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Item2" />
             <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Item3" />
             <Link href="contactSection"><BrandIcon iconName="twitter" /></Link>
             <button onClick={() => setIsModalOpen(true)}>Open Modal</button> 
             <Modal isOpen={isModalOpen} handleClose={() => setIsModalOpen(false)}>This is modal content!</Modal>
-          </div>
+          </ul>
         </article>
     </section>
   )
