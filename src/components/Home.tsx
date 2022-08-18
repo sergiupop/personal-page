@@ -9,7 +9,7 @@ const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section id="homeSection" className="flex items-center justify-center mt-20">
+    <section id="homeSection" className="flex items-center justify-center h-[calc(100vh_-_6rem)] pb-24">
         <img src={selfImage} alt="developer" className="w-1/5 rounded-full"/>
         <article className="ml-8">
           <div>

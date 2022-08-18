@@ -18,8 +18,8 @@ const About = () => {
         <h3>CORE VALUES</h3>
         <ul className="flex flex-col items-center justify-center">
           <li>Clean code</li>
-          <li>Start with why</li>
-          <li>Helping is more important than achieving</li>
+          <li>Attention to details</li>
+          <li>Understanding the things under the hood</li>
         </ul>
       </article>
       <article className="flex flex-col items-center justify-center">
