@@ -1,6 +1,9 @@
 import BioListItem from "./BioListItem";
+import Card from "./Card";
 
 const About = () => {
+  const skills = ["React", "Next", "Redux", "Typescript", "Test1", "Test2", "Test3", "React", "Next", "Redux", "Typescript", "Test1", "Test2", "Test3", "React", "Next", "Redux", "Typescript", "Test1", "Test2", "Test3"];
+
   return (
     <section id="aboutSection" className="flex flex-col items-center justify-center mt-20">
       <h1 className="text-5xl">ABOUT ME</h1>
@@ -23,13 +26,11 @@ const About = () => {
           <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Understanding the things under the hood" />
         </ul>
       </article>
-      <article className="flex flex-col items-center justify-center">
+      <article className="flex flex-col items-center justify-center w-1/4">
         <h3>SKILLS</h3>
-        <ul className="flex flex-col items-center justify-center">
-          <li>DB</li>
-          <li>BE</li>
-          <li>FE</li>
-        </ul>
+        <div className="flex gap-5 flex-wrap justify-evenly">
+          {skills.map((item) => (<Card title={item} />))}
+        </div>
       </article>
     </section>
   )
