@@ -14,9 +14,14 @@ module.exports = {
           "60%": { transform: "rotate(0.0deg)" },
           "100%": { transform: "rotate(0.0deg)" },
         },
+        flip: {
+          "0%": { transform: "rotateY(0deg)" },
+          "100%": { transform: "rotateY(360deg)" },
+        }
       },
       animation: {
-        "waving-hand": "wave 2.5s linear infinite"
+        "waving-hand": "wave 2.5s linear infinite",
+        "flip": "flip 0.5s ease-in-out"
       }
     },
   },

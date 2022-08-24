@@ -27,7 +27,7 @@ const Home = () => {
             <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Item1" />
             <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Item2" />
             <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Item3" />
-            <Link href="contactSection"><BrandIcon iconName="twitter" /></Link>
+            <BrandIcon iconName="twitter" />
             <button onClick={() => setIsModalOpen(true)}>Open Modal</button> 
             <Modal isOpen={isModalOpen} handleClose={() => setIsModalOpen(false)}>This is modal content!</Modal>
           </ul>
