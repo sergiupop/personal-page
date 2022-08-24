@@ -28,7 +28,7 @@ const About = () => {
       </article>
       <article className="flex flex-col items-center justify-center w-1/4">
         <h3>SKILLS</h3>
-        <div className="flex gap-5 flex-wrap justify-evenly">
+        <div className="flex gap-5 flex-wrap justify-evenly border-solid border-red-600 border-2 rounded-[255px_15px_225px_15px/15px_225px_15px_255px]">
           {skills.map((item) => (<Card title={item} />))}
         </div>
       </article>
