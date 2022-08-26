@@ -9,12 +9,12 @@ const App = () => {
       <Home />
       <About />
 
-      <section id="portfolioSection" style={{ height: "2000px" }}>
-        portfolio
-      </section>
-
       <section id="contactSection" style={{ height: "2000px" }}>
         contact
+      </section>
+      
+      <section id="portfolioSection" style={{ height: "2000px" }}>
+        portfolio
       </section>
     </>
   )
