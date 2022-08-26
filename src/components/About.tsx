@@ -7,9 +7,9 @@ const About = () => {
   return (
     <section id="aboutSection" className="flex flex-col items-center justify-center mt-20">
       <h1 className="text-5xl">ABOUT ME</h1>
-      <article className="flex flex-col items-center justify-center border-2 border-indigo-600 w-1/3 shadow-2xl">
-        <p>Hello! I'm Sergiu, a front-end developer from Cluj-Napoca. I love creating web applications with React, and I'm currently studying NodeJS. I still don't know if it's "front-end", "frontend, or "front end", and at this point I'm too afraid to ask.</p>
-      </article>
+      <p className="w-1/3">
+        Hello! I'm Sergiu - husband, dad, full-stack developer based in <a className="hover:text-red-600" href="https://goo.gl/maps/Fbs7vEb95qTew27q6" target="_blank" rel="noreferrer">Cluj-Napoca, Romania</a>.
+      </p>
       <article className="flex flex-col items-center justify-center">
         <h3>HOBBIES</h3>
         <ul>
@@ -21,9 +21,9 @@ const About = () => {
       <article className="flex flex-col items-center justify-center">
         <h3>CORE VALUES</h3>
         <ul>
-          <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Clean code" />
-          <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Attention to details" />
-          <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Understanding the things under the hood" />
+          <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Write clean code (advocate of the Software Craftsmanship manifesto - link)" />
+          <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Pay attention to details (every pixel and every character matters)" />
+          <BioListItem emoji={{ symbol: "🎾", label: "" }} text="Understand what's under the hood (not only make it work, but understand why does it work the way it works)" />
         </ul>
       </article>
       <article className="flex flex-col items-center justify-center">
