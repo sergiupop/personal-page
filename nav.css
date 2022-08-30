@@ -1,0 +1,39 @@
+#nav {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#nav > .nav-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  font-weight: 500;
+  color: black;
+  text-decoration-line: none;
+  transition: color 200ms ease-in;
+}
+
+#nav > .nav-link::before {
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  bottom: 0px;
+  background-color: red;
+  transition: width 200ms ease-in;
+  content: "";
+}
+
+#nav > .nav-link:hover {
+  color: red;
+}
+
+#nav > .nav-link:hover::before {
+  width: 100%;
+}
+
+#nav > img {
+  width: 70px;
+  height: 70px;
+}
