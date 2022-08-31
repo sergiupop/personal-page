@@ -61,7 +61,7 @@
 }
 
 #home-details-list {
-  margin: 0.5rem 0 0 0.5rem;
+  margin: 0.5rem 0 1rem 0.5rem;
   padding: 0;
   line-height: 1.75;
 }
@@ -90,4 +90,37 @@
 
 #home-details-list > .list-item:hover > .list-item-text {
   color: red;
+}
+
+#home-social-media-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#home-social-media-links > a {
+  text-decoration: none;
+  font-size: 0;
+}
+
+#home-social-media-links > a > svg {
+  width: 45px;
+  height: 45px;
+  transition: fill 150ms ease-in;
+}
+
+#facebook-icon:hover {
+  fill: #4267B2;
+}
+
+#github-icon:hover {
+  fill: rgba(0, 0, 0, 0.7);
+}
+
+#linkedin-icon:hover {
+  fill: #0077B5;
+}
+
+#twitter-icon:hover {
+  fill: #1DA1F2;
 }
