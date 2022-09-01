@@ -10,3 +10,32 @@
 #about-section-description {
   text-align: center;
 }
+
+#about-core-values-list {
+  padding: 0;
+}
+
+#about-core-values-list > .list-item {
+  display: flex;
+  align-items: center;
+}
+
+#about-core-values-list > .list-item > .list-item-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 1rem;
+}
+
+#about-core-values-list > .list-item > .list-item-text {
+  font-size: 1.5rem;
+  line-height: normal;
+}
+
+#about-core-values-list > .list-item:not(:last-child) { 
+  margin-bottom: 1rem;  
+}
