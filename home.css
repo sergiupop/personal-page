@@ -104,8 +104,8 @@
 }
 
 #home-social-media-links > a > svg {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   transition: fill 150ms ease-in;
 }
 
