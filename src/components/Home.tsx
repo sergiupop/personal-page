@@ -3,7 +3,6 @@ import selfImage from "../images/pyr.jpg";
 import BioListItem from "./BioListItem";
 import BrandIcon from "./BrandIcon";
 import Modal from "./Modal";
-import MySvg from "./brand/MySvg";
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -12,7 +11,6 @@ const Home = () => {
     <section id="homeSection" className="flex items-center justify-center h-[calc(100vh_-_6rem)] pb-24">
         <img src={selfImage} alt="developer" className="w-1/5 rounded-full"/>
         <div>
-        <MySvg />
         </div>
         <article className="ml-8">
           <div>
