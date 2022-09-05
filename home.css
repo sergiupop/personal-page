@@ -56,17 +56,22 @@
 
 #home-details-list > .list-item {
   display: flex;
-  width: fit-content;
-  cursor: pointer;
   transition: transform 150ms ease-in;
+  cursor: default;
 }
 
-#home-details-list > .list-item > .list-item-icon {
+#home-details-list > .list-item > a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+}
+
+#home-details-list > .list-item .list-item-icon {
   margin-right: 1rem;
   font-size: 1.5rem;
 }
 
-#home-details-list > .list-item > .list-item-text {
+#home-details-list > .list-item .list-item-text {
   display: inline-flex;
   align-items: center;
   transition: color 150ms ease-in;
@@ -76,7 +81,7 @@
   transform: translateY(-0.25rem);
 }
 
-#home-details-list > .list-item:hover > .list-item-text {
+#home-details-list > .list-item:hover .list-item-text {
   color: red;
 }
 
