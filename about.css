@@ -54,3 +54,22 @@
 #about-section-core-values > .core-value-item > .core-value-subtitle {
   font-style: italic;
 }
+
+#about-section-skills {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+#about-section-skills > .skill-item {
+  cursor: default;
+  padding: 0.5rem 0.875rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease-in;
+}
+
+#about-section-skills > .skill-item:hover {
+  transform: translateY(-0.25rem);
+}
