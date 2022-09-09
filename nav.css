@@ -2,7 +2,8 @@ nav {
   height: 6rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  padding-right: 60px;
+  justify-content: end;
 }
 
 nav > .nav-link {
@@ -36,4 +37,27 @@ nav > .nav-link:hover::before {
 #logo-image {
   width: 70px;
   height: 70px;
+}
+
+#theme-switch {
+  display: inline-flex;
+  cursor: pointer;
+  width: 3.5rem;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #4b4c53;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+#theme-switch > div {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-container {
+  position: absolute;
+  inset: 0;
 }
