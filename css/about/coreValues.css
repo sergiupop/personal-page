@@ -10,15 +10,16 @@
   justify-content: flex-start;
   width: 340px;
   padding: 1.6rem 0.4rem;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background: #FCFCFC;
-  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   transition: all 0.15s ease-in;
   cursor: default;
+  transition: all 200ms ease-in;
 }
 
 #core-values-list > .core-value-item:hover {
-  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.2);
+  transform: translateY(-0.25rem);
+  /*box-shadow: 0 4px 20px 0 rgba(0,0,0,0.2);*/
 }
 
 #core-values-list > .core-value-item > .core-value-icon {
