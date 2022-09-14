@@ -1,0 +1,57 @@
+#core-values > h3 {
+  margin-bottom: 1.3rem;
+}
+
+#core-values-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+#core-values-list > .core-value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 340px;
+  padding: 1.6rem 0.4rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background: #FCFCFC;
+  border-radius: 15px;
+  transition: all 0.15s ease-in;
+  cursor: default;
+}
+
+#core-values-list > .core-value-item:hover {
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.2);
+}
+
+#core-values-list > .core-value-item > .core-value-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #F1F1F1;
+}
+
+#core-values-list > .core-value-item > .core-value-icon > svg {
+  width: 40px;
+  height: 40px;
+}
+
+#core-values-list > .core-value-item > .core-value-title, .core-value-subtitle {
+  text-align: center;
+}
+
+#core-values-list > .core-value-item > .core-value-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#core-values-list > .core-value-item > .core-value-subtitle {
+  font-style: italic;
+  font-size: 1.3rem;
+}

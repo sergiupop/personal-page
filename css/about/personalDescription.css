@@ -1,0 +1,53 @@
+#personal-description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#personal-description > .description-section {
+  display: flex;
+}
+
+#personal-description > .description-section > .text-container {
+  width: 50%;
+}
+
+#personal-description > .description-section > .gray-text {
+  color: gray;
+}
+
+#personal-description > .description-section > .image-container {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+#personal-description p {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+#personal-description .bold {
+  font-weight: 500;
+}
+
+#personal-description .italic {
+  font-style: italic;
+}
+
+#personal-description #tennis-image {
+  width: 230px;
+  height: 230px;
+}
+
+#personal-description #guitar-image {
+  width: 230px;
+  height: 230px;
+}
+
+#personal-description #barista-image {
+  width: 320px;
+  height: 280px;
+}

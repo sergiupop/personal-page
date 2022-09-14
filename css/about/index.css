@@ -1,0 +1,10 @@
+@import "personalDescription.css";
+@import "coreValues.css";
+@import "skills.css";
+
+#about-section {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 20% 0;
+  gap: 5rem;
+}
