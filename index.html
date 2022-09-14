@@ -7,27 +7,22 @@
       name="description"
       content="Web site created by Sergiu Pop"
     />
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about.css">
     <script src="index.js" defer></script>
     <title>Sergiu Pop</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <button id="theme-switch" onclick="switchTheme()">
-          <span id="light-theme-icon" class="theme-icon">☀️</span>
-          <span id="dark-theme-icon" class="theme-icon">🌑</span>
-        </button>
-      </nav>
-    </header>
+    <button id="theme-switch" onclick="switchTheme()">
+      <span id="light-theme-icon" class="theme-icon">☀️</span>
+      <span id="dark-theme-icon" class="theme-icon">🌑</span>
+    </button>
 
     <main>
       <section id="home-section">
         <div id="home-section-content">
-          <img id="self-image" src="./self.png" alt="test" />
+          <img id="self-image" src="./images/self.png" alt="test" />
           <div id="home-personal-details">
             <h1>Hi, I'm <span id="home-intro-message-name">Sergiu</span><span id="home-intro-message-waving-hand">🖐</span></h1>
             <h2>I'm a Software Engineer.</h2>
@@ -69,7 +64,7 @@
       </section>
 
       <section id="about-section">
-        <div id="personal-description">
+        <section id="personal-description">
           <div class="description-section">
             <div class="text-container">
               <p>
@@ -79,13 +74,13 @@
               </p>
             </div>
             <div class="image-container">
-              <img id="tennis-image" src="./tennis.png" alt="test"/>
+              <img id="tennis-image" src="./images/tennis.png" alt="test"/>
             </div>
           </div>
 
           <div class="description-section">
             <div class="image-container">
-              <img id="guitar-image" src="./guitar.png" alt="test"/>
+              <img id="guitar-image" src="./images/guitar.png" alt="test"/>
             </div>
             <div class="text-container gray-text">
               <p>
@@ -110,17 +105,15 @@
               </p>
             </div>
             <div class="image-container">
-              <img id="barista-image" src="./barista.png" alt="test"/>
+              <img id="barista-image" src="./images/barista.png" alt="test"/>
             </div>
           </div>
 
           <p class="bold italic">I'm sure I can bring great value to your business/team, so drop me a line!</p>
-        </div>
+        </section>
 
-        <div id="about-section-core-values">
-          <div id="core-values-header">
-            <h3>CORE WORK VALUES</h3>
-          </div>
+        <section id="core-values">
+          <h3>CORE WORK VALUES</h3>
           <div id="core-values-list">
             <div class="core-value-item">
               <div class="core-value-icon">
@@ -144,27 +137,30 @@
               <div class="core-value-subtitle">Understand why things work the way they work</div>
             </div>
           </div>
-        </div>
-        <h3>SKILLS</h3>
-        <div id="about-section-skills">
-          <div class="skill-item">Git</div>
-          <div class="skill-item">Azure DevOps Server</div>
-          <div class="skill-item">.NET Web API</div>
-          <div class="skill-item">SQL</div>
-          <div class="skill-item">Entity Framework</div>
-          <div class="skill-item">NodeJS</div>
-          <div class="skill-item">HTML</div>
-          <div class="skill-item">CSS</div>
-          <div class="skill-item">SCSS</div>
-          <div class="skill-item">JavaScript</div>
-          <div class="skill-item">TypeScript</div>
-          <div class="skill-item">ReactJS</div>
-          <div class="skill-item">NextJS</div>
-          <div class="skill-item">Redux</div>
-          <div class="skill-item">Jest</div>
-          <div class="skill-item">Tailwind</div>
-          <div class="skill-item">Styled Components</div>
-        </div>
+        </section>
+        
+        <section id="skills">
+          <h3>SKILLS</h3>
+          <div class="skills-list">
+            <div class="skill-item">Git</div>
+            <div class="skill-item">Azure DevOps Server</div>
+            <div class="skill-item">.NET Web API</div>
+            <div class="skill-item">SQL</div>
+            <div class="skill-item">Entity Framework</div>
+            <div class="skill-item">NodeJS</div>
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+            <div class="skill-item">SCSS</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">TypeScript</div>
+            <div class="skill-item">ReactJS</div>
+            <div class="skill-item">NextJS</div>
+            <div class="skill-item">Redux</div>
+            <div class="skill-item">Jest</div>
+            <div class="skill-item">Tailwind</div>
+            <div class="skill-item">Styled Components</div>
+          </div>
+        </section>
       </section>
     </main>
     <div id="scroll-to-top">

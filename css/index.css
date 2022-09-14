@@ -27,6 +27,11 @@ h2 {
   line-height: 1.5;
 }
 
+h3 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
 ul {
   list-style-type: none;
 }
@@ -35,11 +40,28 @@ footer {
   text-align: center;
 }
 
+#theme-switch {
+  background: transparent;
+  border: none;
+  font-size: 1.7rem;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 2rem;
+  right: 4rem;
+}
+
 #scroll-to-top {
   display: flex;
   position: fixed;
-  bottom: 2em;
-  right: 4em;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  bottom: 2rem;
+  right: 4rem;
 }
 
 #scroll-to-top > a {
