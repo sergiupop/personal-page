@@ -12,9 +12,8 @@
   padding: 1.6rem 0.4rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  transition: all 0.15s ease-in;
   cursor: default;
-  transition: all 200ms ease-in;
+  transition: all 150ms ease-in;
 }
 
 #core-values-list > .core-value-item:hover {
