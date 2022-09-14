@@ -1,7 +1,3 @@
-#core-values > h3 {
-  margin-bottom: 1.3rem;
-}
-
 #core-values-list {
   display: flex;
   justify-content: space-between;
@@ -31,13 +27,11 @@
   justify-content: center;
   width: 70px;
   height: 70px;
-  border-radius: 50%;
-  background-color: #F1F1F1;
 }
 
 #core-values-list > .core-value-item > .core-value-icon > svg {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 
 #core-values-list > .core-value-item > .core-value-title, .core-value-subtitle {

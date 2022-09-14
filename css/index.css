@@ -38,6 +38,9 @@ ul {
 
 footer {
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-size: 0.75rem;
 }
 
 #theme-switch {
@@ -76,4 +79,26 @@ footer {
 
 .hide-element {
   display: none;
+}
+
+.wrapped-header {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.wrapped-header:before,
+.wrapped-header:after {
+  content: '';
+  background-color: #333;
+  height: 2px;
+  flex-grow: 1;
+}
+
+.wrapped-header:before {
+  margin-right: 20px;
+}
+
+.wrapped-header:after {
+  margin-left: 20px;
 }

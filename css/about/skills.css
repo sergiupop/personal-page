@@ -1,15 +1,3 @@
-/*#skills {
-  display: flex;
-  width: 40%;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-}*/
-
-#skills > h3 {
-  margin-bottom: 1.3rem;
-}
-
 #skills-list-container {
   display: flex;
   justify-content: center;
