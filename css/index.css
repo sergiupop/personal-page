@@ -43,6 +43,15 @@ footer {
   font-size: 0.75rem;
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 #theme-switch {
   background: transparent;
   border: none;
@@ -50,10 +59,9 @@ footer {
   padding: 0;
   cursor: pointer;
   position: absolute;
-  width: 40px;
-  height: 40px;
   top: 2rem;
   right: 4rem;
+  animation: rotation 10s linear infinite;
 }
 
 #scroll-to-top {
@@ -70,6 +78,11 @@ footer {
 #scroll-to-top > a {
   text-decoration: none;
   font-size: 0;
+  transition: transform 150ms ease-in;
+}
+
+#scroll-to-top:hover > a {
+  transform: translateY(-4px);
 }
 
 #scroll-to-top > a > svg {
