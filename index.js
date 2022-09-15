@@ -9,3 +9,15 @@ function switchTheme() {
     themeIcon.classList.toggle("hide-element");
   }
 }
+
+const scrollToTopLinkContainer = document.getElementById("scroll-to-top");
+const homeSection = document.getElementById("home-section");
+
+window.onscroll = function() {
+  if (document.body.scrollTop >= homeSection.clientHeight || 
+    document.documentElement.scrollTop >= homeSection.clientHeight) {
+    scrollToTopLinkContainer.style.display = "flex";
+  } else {
+    scrollToTopLinkContainer.style.display = "none";
+  }
+}
