@@ -5,6 +5,6 @@
 #about-section {
   display: flex;
   flex-direction: column;
-  padding: 3rem 20% 0;
-  gap: 5rem;
+  padding: 48px 20% 0;
+  gap: 80px;
 }

@@ -59,8 +59,8 @@ footer {
   padding: 0;
   cursor: pointer;
   position: absolute;
-  top: 2rem;
-  right: 4rem;
+  top: 32px;
+  right: 64px;
   animation: rotation 10s linear infinite;
 }
 
@@ -71,8 +71,8 @@ footer {
   height: 40px;
   align-items: center;
   justify-content: center;
-  bottom: 2rem;
-  right: 4rem;
+  bottom: 32px;
+  right: 64px;
 }
 
 #scroll-to-top > a {
@@ -95,7 +95,7 @@ footer {
 }
 
 .wrapped-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
 }

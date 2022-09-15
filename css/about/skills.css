@@ -8,18 +8,18 @@
   width: 50%;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 1.7rem;
+  gap: 28px;
 }
 
 #skills-list > .skill-item {
   cursor: default;
   font-size: 1.3rem;
   border-radius: 10px;
-  padding: 0.5rem 0.875rem;
+  padding: 8px 14px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: all 150ms ease-in;
 }
 
 #skills-list > .skill-item:hover {
-  transform: translateY(-0.25rem);
+  transform: translateY(-4px);
 }

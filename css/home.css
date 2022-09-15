@@ -6,7 +6,7 @@
 }
 
 #home-section-content {
-  padding-bottom: 7rem;
+  padding-bottom: 112px;
   display: flex;
   align-items: center;
 }
@@ -15,12 +15,12 @@
   width: 35vh;
   height: 35vh;
   border-radius: 50%;
-  padding: 0.75rem;
+  padding: 12px;
   background: linear-gradient(to bottom, black, yellow);
 }
 
 #home-personal-details {
-  margin-left: 2rem;
+  margin-left: 32px;
 }
 
 #home-intro-message-name {
@@ -45,11 +45,11 @@
   animation: wave 2.5s linear infinite;
   transform-origin: bottom;
   display: inline-block;
-  margin-left: 1rem;
+  margin-left: 16px;
 }
 
 #home-details-list {
-  margin: 0.5rem 0 1rem 0.5rem;
+  margin: 8px 0 16px 8px;
   padding: 0;
   line-height: 1.75;
 }
@@ -68,7 +68,7 @@
 }
 
 #home-details-list > .list-item .list-item-icon {
-  margin-right: 1rem;
+  margin-right: 16px;
   font-size: 1.5rem;
 }
 
@@ -79,7 +79,7 @@
 }
 
 #home-details-list > .list-item:hover {
-  transform: translateY(-0.25rem);
+  transform: translateY(-4px);
 }
 
 #home-social-media-links {
@@ -119,7 +119,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 24px;
 }
 
 #know-more-link {
