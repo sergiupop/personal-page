@@ -12,8 +12,8 @@
   width: 50%;
 }
 
-#personal-description > .description-section > .gray-text {
-  color: gray;
+#personal-description > .description-section > .accent-text-color {
+  color: var(--accent-text-color);
 }
 
 #personal-description > .description-section > .image-container {

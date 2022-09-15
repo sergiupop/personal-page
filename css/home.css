@@ -97,6 +97,7 @@
   width: 40px;
   height: 40px;
   transition: fill 150ms ease-in;
+  fill: var(--text-color);
 }
 
 #facebook-icon:hover {
@@ -104,7 +105,7 @@
 }
 
 #github-icon:hover {
-  fill: rgba(0, 0, 0, 0.7);
+  fill: var(--github-icon-hover-fill);
 }
 
 #linkedin-icon:hover {
@@ -153,6 +154,7 @@
   width: 18px;
   height: 18px;
   transition: transform 150ms ease-in;
+  fill: var(--text-color);
 }
 
 #know-more-link:hover #arrow-svg {
@@ -161,7 +163,7 @@
 
 #circles-svg > #default-circle {
   fill: transparent;
-  stroke: lightgray;
+  stroke: var(--know-more-link-default-stroke);
   stroke-width: 2;
 }
 
@@ -169,7 +171,7 @@
   transform: rotate(-90deg);
   transform-origin: center;
   fill: transparent;
-  stroke: black;
+  stroke: var(--text-color);
   stroke-width: 2;
   stroke-dasharray: 139;
   stroke-dashoffset: 139;
