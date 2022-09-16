@@ -81,10 +81,13 @@ footer {
   position: absolute;
   top: 32px;
   right: 64px;
-  animation: rotation 10s linear infinite;
   line-height: 1.5;
   width: 3rem;
   height: 3rem;
+}
+
+#theme-switch > .theme-icon {
+  animation: rotation 10s linear infinite;
 }
 
 #scroll-to-top {
