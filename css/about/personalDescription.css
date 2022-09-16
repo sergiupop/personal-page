@@ -33,6 +33,10 @@
   font-weight: 500;
 }
 
+#personal-description .bolder {
+  font-weight: 700;
+}
+
 #personal-description .italic {
   font-style: italic;
 }
