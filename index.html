@@ -1,193 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Sergiu Pop's personal page"
-    />
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/about/index.css">
-    <script src="./js/themeSwitch.js" defer></script>
-    <script src="./js/scroll.js" defer></script>
-    <title>Sergiu Pop</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
-  </head>
-  <body>
-    <button id="theme-switch" onclick="switchTheme()">
-      <div id="light-theme-icon" class="theme-icon">🌑</div>
-      <div id="dark-theme-icon" class="theme-icon">☀️</div>
-    </button>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Sergiu Pop's personal page" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<link rel="stylesheet" href="./css/home.css" />
+		<link rel="stylesheet" href="./css/about/index.css" />
+		<script src="./js/themeSwitch.js" defer></script>
+		<script src="./js/scroll.js" defer></script>
+		<title>Sergiu Pop</title>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./site.webmanifest" />
+	</head>
+	<body>
+		<button id="theme-switch" onclick="switchTheme()">
+			<div id="light-theme-icon" class="theme-icon">🌑</div>
+			<div id="dark-theme-icon" class="theme-icon">☀️</div>
+		</button>
 
-    <main>
-      <section id="home-section">
-        <div id="home-section-content">
-          <img id="self-image" src="./images/self.webp" alt="test" />
-          <div id="home-personal-details">
-            <h1>Hi, I'm <span id="home-intro-message-name">Sergiu</span><span id="home-intro-message-waving-hand">🖐</span></h1>
-            <h2>I'm a Software Engineer.</h2>
-            <ul id="home-details-list">
-              <li class="list-item">
-                <a href="https://goo.gl/maps/Fbs7vEb95qTew27q6" aria-label="Google Maps link to Cluj-Napoca, Romania" target="_blank" rel="noreferrer">
-                  <span class="list-item-icon">🌍</span>
-                  <span class="list-item-text">Based in Cluj-Napoca, Romania</span>
-                </a>
-              </li>
-              <li class="list-item">
-                <span class="list-item-icon">🎾</span>
-                <span class="list-item-text">Tennis enthusiast</span>
-              </li>
-              <li class="list-item">
-                <a href="mailto:sergiupop94@gmail.com" aria-label="Link to default mail service">
-                  <span class="list-item-icon">📧</span>
-                  <span class="list-item-text">Let's get in touch</span>
-                </a>
-              </li>
-            </ul>
-            <div id="home-social-media-links">
-              <a href="https://www.facebook.com/sergiu.pop.1194" aria-label="Link to facebook account">
-                <svg id="facebook-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
-              </a>
-              <a href="https://github.com/sergiupop" aria-label="Link to github account">
-                <svg id="github-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-              </a>
-              <a href="https://www.linkedin.com/in/sergiu-pop-a7264b120/" aria-label="Link to linkedin account">
-                <svg id="linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-              </a>
-              <a href="https://twitter.com/sergiu_popp" aria-label="Link to twitter account">
-                <svg id="twitter-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
-              </a>
-            </div>
-            
-            <div id="know-more-link-container">
-              <a href="#about-section" id="know-more-link" aria-label="Link to the section with more details about me">
-                Get to know more about me
-                <div id="circled-arrow-container">
-                  <svg id="circles-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" xml:space="preserve">
-                    <circle id="default-circle" cx="24" cy="24" r="22"/>
-                    <circle id="hover-circle" cx="24" cy="24" r="22" />
-                  </svg>
-                  <svg id="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+		<main>
+			<section id="home-section">
+				<div id="home-section-content">
+					<img id="self-image" src="./images/self.webp" alt="test" />
+					<div id="home-personal-details">
+						<h1>
+							Hi, I'm <span id="home-intro-message-name">Sergiu</span
+							><span id="home-intro-message-waving-hand">🖐</span>
+						</h1>
+						<h2>I'm a Software Engineer.</h2>
+						<ul id="home-details-list">
+							<li class="list-item">
+								<a
+									href="https://goo.gl/maps/Fbs7vEb95qTew27q6"
+									aria-label="Google Maps link to Cluj-Napoca, Romania"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<span class="list-item-icon">🌍</span>
+									<span class="list-item-text"
+										>Based in Cluj-Napoca, Romania</span
+									>
+								</a>
+							</li>
+							<li class="list-item">
+								<span class="list-item-icon">🎾</span>
+								<span class="list-item-text">Tennis enthusiast</span>
+							</li>
+							<li class="list-item">
+								<a
+									href="mailto:sergiupop94@gmail.com"
+									aria-label="Link to default mail service"
+								>
+									<span class="list-item-icon">📧</span>
+									<span class="list-item-text">Let's get in touch</span>
+								</a>
+							</li>
+						</ul>
+						<div id="home-social-media-links">
+							<a
+								href="https://www.facebook.com/sergiu.pop.1194"
+								aria-label="Link to facebook account"
+							>
+								<svg
+									id="facebook-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+								>
+									<!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+									<path
+										d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+									/>
+								</svg>
+							</a>
+							<a
+								href="https://github.com/sergiupop"
+								aria-label="Link to github account"
+							>
+								<svg
+									id="github-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 496 512"
+								>
+									<!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+									<path
+										d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+									/>
+								</svg>
+							</a>
+							<a
+								href="https://www.linkedin.com/in/sergiu-pop-a7264b120/"
+								aria-label="Link to linkedin account"
+							>
+								<svg
+									id="linkedin-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 448 512"
+								>
+									<!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+									<path
+										d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+									/>
+								</svg>
+							</a>
+							<a
+								href="https://twitter.com/sergiu_popp"
+								aria-label="Link to twitter account"
+							>
+								<svg
+									id="twitter-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+								>
+									<!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+									<path
+										d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+									/>
+								</svg>
+							</a>
+						</div>
 
-      <section id="about-section">
-        <section id="personal-description">
-          <div class="description-section">
-            <div class="text-container">
-              <p>
-                <span class="bold">I'm <span class="bolder">Sergiu Pop</span> - husband, dad and experienced software engineer.</span></br>
-                I've worked with both backend and frontend technologies,
-                but at this point I feel a bit more comfortable working on the frontend side.
-              </p>
-            </div>
-            <div class="image-container">
-              <img id="tennis-image" src="./images/tennis.webp" alt="Tennis player"/>
-            </div>
-          </div>
+						<div id="know-more-link-container">
+							<a
+								href="#about-section"
+								id="know-more-link"
+								aria-label="Link to the section with more details about me"
+							>
+								Get to know more about me
+								<div id="circled-arrow-container">
+									<svg
+										id="circles-svg"
+										version="1.1"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										x="0px"
+										y="0px"
+										viewBox="0 0 48 48"
+										xml:space="preserve"
+									>
+										<circle id="default-circle" cx="24" cy="24" r="22" />
+										<circle id="hover-circle" cx="24" cy="24" r="22" />
+									</svg>
+									<svg
+										id="arrow-svg"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 384 512"
+									>
+										<!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+										<path
+											d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+										/>
+									</svg>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 
-          <div class="description-section">
-            <div class="image-container">
-              <img id="guitar-image" src="./images/guitar.webp" alt="Guitar player"/>
-            </div>
-            <div class="text-container accent-text-color">
-              <p>
-                I enjoy watching and playing tennis, playing guitar and also creating beautiful latte art with my coffee.</br>
-                I'm also a fan of detective novels and mystery movies.
-              </p>
-            </div>
-          </div>
+			<section id="about-section">
+				<section id="personal-description">
+					<div class="description-section">
+						<div class="text-container">
+							<p>
+								<span class="bold"
+									>I'm <span class="bolder">Sergiu Pop</span> - husband, dad and
+									experienced software engineer.</span
+								><br />
+								I've worked with both backend and frontend technologies, but at
+								this point I feel a bit more comfortable working on the frontend
+								side.
+							</p>
+						</div>
+						<div class="image-container">
+							<img
+								id="tennis-image"
+								src="./images/tennis.webp"
+								alt="Tennis player"
+							/>
+						</div>
+					</div>
 
-          <p>
-            I try to regularly step outside my comfort zone and tackle new challenges, so that I can 
-            keep on learning and developing new skills.</br>
-            Right now I'm learning German, so that's quite a challenge!
-          </p>
+					<div class="description-section">
+						<div class="image-container">
+							<img
+								id="guitar-image"
+								src="./images/guitar.webp"
+								alt="Guitar player"
+							/>
+						</div>
+						<div class="text-container accent-text-color">
+							<p>
+								I enjoy watching and playing tennis, playing guitar and also
+								creating beautiful latte art with my coffee.<br />
+								I'm also a fan of detective novels and mystery movies.
+							</p>
+						</div>
+					</div>
 
-          <div class="description-section">
-            <div class="text-container">
-              <p>
-                I consider myself a <span class="bold">fast learner</span>, an <span class="bold">easily adaptable person</span> and an <span class="bold">effective communicator</span>.</br>
-                I'm also a great <span class="bold">team player</span> and I enjoy sharing my knowledge and experience with those around.
-              </p>
-            </div>
-            <div class="image-container">
-              <img id="barista-image" src="./images/barista.webp" alt="Barista"/>
-            </div>
-          </div>
+					<p>
+						I try to regularly step outside my comfort zone and tackle new
+						challenges, so that I can keep on learning and developing new
+						skills.<br />
+						Right now I'm learning German, so that's quite a challenge!
+					</p>
 
-          <p class="bold italic">I'm sure I can bring great value to your business/team, so drop me a line!</p>
-        </section>
+					<div class="description-section">
+						<div class="text-container">
+							<p>
+								I consider myself a <span class="bold">fast learner</span>, an
+								<span class="bold">easily adaptable person</span> and an
+								<span class="bold">effective communicator</span>.<br />
+								I'm also a great <span class="bold">team player</span> and I
+								enjoy sharing my knowledge and experience with those around.
+							</p>
+						</div>
+						<div class="image-container">
+							<img
+								id="barista-image"
+								src="./images/barista.webp"
+								alt="Barista"
+							/>
+						</div>
+					</div>
 
-        <section id="core-values">
-          <h3 class="wrapped-header">CORE WORK VALUES</h3>
-          <div id="core-values-list">
-            <div class="core-value-item">
-              <div class="core-value-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M414.8 40.79L286.8 488.8C281.9 505.8 264.2 515.6 247.2 510.8C230.2 505.9 220.4 488.2 225.2 471.2L353.2 23.21C358.1 6.216 375.8-3.624 392.8 1.232C409.8 6.087 419.6 23.8 414.8 40.79H414.8zM518.6 121.4L630.6 233.4C643.1 245.9 643.1 266.1 630.6 278.6L518.6 390.6C506.1 403.1 485.9 403.1 473.4 390.6C460.9 378.1 460.9 357.9 473.4 345.4L562.7 256L473.4 166.6C460.9 154.1 460.9 133.9 473.4 121.4C485.9 108.9 506.1 108.9 518.6 121.4V121.4zM166.6 166.6L77.25 256L166.6 345.4C179.1 357.9 179.1 378.1 166.6 390.6C154.1 403.1 133.9 403.1 121.4 390.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4L121.4 121.4C133.9 108.9 154.1 108.9 166.6 121.4C179.1 133.9 179.1 154.1 166.6 166.6V166.6z"/></svg>
-              </div>
-              <div class="core-value-title">Write clean code</div>
-              <div class="core-value-subtitle">Readable, maintainable, extensible</div>
-            </div>
-            <div class="core-value-item">
-              <div class="core-value-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 256C160 185.3 217.3 128 288 128C358.7 128 416 185.3 416 256C416 326.7 358.7 384 288 384C217.3 384 160 326.7 160 256zM288 336C332.2 336 368 300.2 368 256C368 211.8 332.2 176 288 176C287.3 176 286.7 176 285.1 176C287.3 181.1 288 186.5 288 192C288 227.3 259.3 256 224 256C218.5 256 213.1 255.3 208 253.1C208 254.7 208 255.3 208 255.1C208 300.2 243.8 336 288 336L288 336zM95.42 112.6C142.5 68.84 207.2 32 288 32C368.8 32 433.5 68.84 480.6 112.6C527.4 156 558.7 207.1 573.5 243.7C576.8 251.6 576.8 260.4 573.5 268.3C558.7 304 527.4 355.1 480.6 399.4C433.5 443.2 368.8 480 288 480C207.2 480 142.5 443.2 95.42 399.4C48.62 355.1 17.34 304 2.461 268.3C-.8205 260.4-.8205 251.6 2.461 243.7C17.34 207.1 48.62 156 95.42 112.6V112.6zM288 80C222.8 80 169.2 109.6 128.1 147.7C89.6 183.5 63.02 225.1 49.44 256C63.02 286 89.6 328.5 128.1 364.3C169.2 402.4 222.8 432 288 432C353.2 432 406.8 402.4 447.9 364.3C486.4 328.5 512.1 286 526.6 256C512.1 225.1 486.4 183.5 447.9 147.7C406.8 109.6 353.2 80 288 80V80z"/></svg>
-              </div>
-              <div class="core-value-title">Attention to details</div>
-              <div class="core-value-subtitle">Every pixel and every comma matters</div>
-            </div>
-            <div class="core-value-item">
-              <div class="core-value-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M204.3 32.01H96c-52.94 0-96 43.06-96 96c0 17.67 14.31 31.1 32 31.1s32-14.32 32-31.1c0-17.64 14.34-32 32-32h108.3C232.8 96.01 256 119.2 256 147.8c0 19.72-10.97 37.47-30.5 47.33L127.8 252.4C117.1 258.2 112 268.7 112 280v40c0 17.67 14.31 31.99 32 31.99s32-14.32 32-31.99V298.3L256 251.3c39.47-19.75 64-59.42 64-103.5C320 83.95 268.1 32.01 204.3 32.01zM144 400c-22.09 0-40 17.91-40 40s17.91 39.1 40 39.1s40-17.9 40-39.1S166.1 400 144 400z"/></svg>
-              </div>
-              <div class="core-value-title">Start with "WHY?"</div>
-              <div class="core-value-subtitle">Understand why things work the way they work</div>
-            </div>
-          </div>
-        </section>
-        
-        <section id="skills">
-          <h3 class="wrapped-header">SKILLS</h3>
-          <div id="skills-list-container">
-            <div id="skills-list">
-              <div class="skill-item">Git</div>
-              <div class="skill-item">Azure DevOps Server</div>
-              <div class="skill-item">.NET Web API</div>
-              <div class="skill-item">SQL</div>
-              <div class="skill-item">Entity Framework</div>
-              <div class="skill-item">NodeJS</div>
-              <div class="skill-item">HTML</div>
-              <div class="skill-item">CSS</div>
-              <div class="skill-item">SCSS</div>
-              <div class="skill-item">JavaScript</div>
-              <div class="skill-item">TypeScript</div>
-              <div class="skill-item">ReactJS</div>
-              <div class="skill-item">NextJS</div>
-              <div class="skill-item">Redux</div>
-              <div class="skill-item">Jest</div>
-              <div class="skill-item">Tailwind</div>
-              <div class="skill-item">Styled Components</div>
-            </div>
-          </div>
-        </section>
-      </section>
-    </main>
-    <div id="scroll-to-top">
-      <button onclick="scrollToTop()">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
-      </button>
-    </div>
-    <footer>
-      Created by Sergiu Pop © 2022
-    </footer>
-  </body>
+					<p class="bold italic">
+						I'm sure I can bring great value to your business or team, so drop
+						me a line!
+					</p>
+				</section>
+
+				<section id="core-values">
+					<h3 class="wrapped-header">CORE WORK VALUES</h3>
+					<div id="core-values-list">
+						<div class="core-value-item">
+							<div class="core-value-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+									<!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+									<path
+										d="M414.8 40.79L286.8 488.8C281.9 505.8 264.2 515.6 247.2 510.8C230.2 505.9 220.4 488.2 225.2 471.2L353.2 23.21C358.1 6.216 375.8-3.624 392.8 1.232C409.8 6.087 419.6 23.8 414.8 40.79H414.8zM518.6 121.4L630.6 233.4C643.1 245.9 643.1 266.1 630.6 278.6L518.6 390.6C506.1 403.1 485.9 403.1 473.4 390.6C460.9 378.1 460.9 357.9 473.4 345.4L562.7 256L473.4 166.6C460.9 154.1 460.9 133.9 473.4 121.4C485.9 108.9 506.1 108.9 518.6 121.4V121.4zM166.6 166.6L77.25 256L166.6 345.4C179.1 357.9 179.1 378.1 166.6 390.6C154.1 403.1 133.9 403.1 121.4 390.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4L121.4 121.4C133.9 108.9 154.1 108.9 166.6 121.4C179.1 133.9 179.1 154.1 166.6 166.6V166.6z"
+									/>
+								</svg>
+							</div>
+							<div class="core-value-title">Write clean code</div>
+							<div class="core-value-subtitle">
+								Readable, maintainable, extensible
+							</div>
+						</div>
+						<div class="core-value-item">
+							<div class="core-value-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+									<!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+									<path
+										d="M160 256C160 185.3 217.3 128 288 128C358.7 128 416 185.3 416 256C416 326.7 358.7 384 288 384C217.3 384 160 326.7 160 256zM288 336C332.2 336 368 300.2 368 256C368 211.8 332.2 176 288 176C287.3 176 286.7 176 285.1 176C287.3 181.1 288 186.5 288 192C288 227.3 259.3 256 224 256C218.5 256 213.1 255.3 208 253.1C208 254.7 208 255.3 208 255.1C208 300.2 243.8 336 288 336L288 336zM95.42 112.6C142.5 68.84 207.2 32 288 32C368.8 32 433.5 68.84 480.6 112.6C527.4 156 558.7 207.1 573.5 243.7C576.8 251.6 576.8 260.4 573.5 268.3C558.7 304 527.4 355.1 480.6 399.4C433.5 443.2 368.8 480 288 480C207.2 480 142.5 443.2 95.42 399.4C48.62 355.1 17.34 304 2.461 268.3C-.8205 260.4-.8205 251.6 2.461 243.7C17.34 207.1 48.62 156 95.42 112.6V112.6zM288 80C222.8 80 169.2 109.6 128.1 147.7C89.6 183.5 63.02 225.1 49.44 256C63.02 286 89.6 328.5 128.1 364.3C169.2 402.4 222.8 432 288 432C353.2 432 406.8 402.4 447.9 364.3C486.4 328.5 512.1 286 526.6 256C512.1 225.1 486.4 183.5 447.9 147.7C406.8 109.6 353.2 80 288 80V80z"
+									/>
+								</svg>
+							</div>
+							<div class="core-value-title">Attention to details</div>
+							<div class="core-value-subtitle">
+								Every pixel and every comma matters
+							</div>
+						</div>
+						<div class="core-value-item">
+							<div class="core-value-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+									<!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+									<path
+										d="M204.3 32.01H96c-52.94 0-96 43.06-96 96c0 17.67 14.31 31.1 32 31.1s32-14.32 32-31.1c0-17.64 14.34-32 32-32h108.3C232.8 96.01 256 119.2 256 147.8c0 19.72-10.97 37.47-30.5 47.33L127.8 252.4C117.1 258.2 112 268.7 112 280v40c0 17.67 14.31 31.99 32 31.99s32-14.32 32-31.99V298.3L256 251.3c39.47-19.75 64-59.42 64-103.5C320 83.95 268.1 32.01 204.3 32.01zM144 400c-22.09 0-40 17.91-40 40s17.91 39.1 40 39.1s40-17.9 40-39.1S166.1 400 144 400z"
+									/>
+								</svg>
+							</div>
+							<div class="core-value-title">Start with "WHY?"</div>
+							<div class="core-value-subtitle">
+								Understand why things work the way they work fdsf sdf dsfdsf
+								dsfds fd fds fds fsd fsdf
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="skills">
+					<h3 class="wrapped-header">TECHNOLOGIES</h3>
+					<div id="skills-list-container">
+						<div id="skills-list">
+							<div class="skill-item">Git</div>
+							<div class="skill-item">Azure DevOps Server</div>
+							<div class="skill-item">.NET Web API</div>
+							<div class="skill-item">SQL</div>
+							<div class="skill-item">Entity Framework</div>
+							<div class="skill-item">NodeJS</div>
+							<div class="skill-item">HTML</div>
+							<div class="skill-item">CSS</div>
+							<div class="skill-item">SCSS</div>
+							<div class="skill-item">JavaScript</div>
+							<div class="skill-item">TypeScript</div>
+							<div class="skill-item">ReactJS</div>
+							<div class="skill-item">NextJS</div>
+							<div class="skill-item">Redux</div>
+							<div class="skill-item">Jest</div>
+							<div class="skill-item">Tailwind</div>
+							<div class="skill-item">Styled Components</div>
+							<div class="skill-item">Storybook</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</main>
+		<div id="scroll-to-top">
+			<button onclick="scrollToTop()">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+					<!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+					<path
+						d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+					/>
+				</svg>
+			</button>
+		</div>
+		<footer>Created by Sergiu Pop © 2022</footer>
+	</body>
 </html>

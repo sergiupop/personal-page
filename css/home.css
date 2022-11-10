@@ -1,183 +1,199 @@
 #home-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 }
 
 #home-section-content {
-  padding-bottom: 112px;
-  display: flex;
-  align-items: center;
+	padding-bottom: 112px;
+	display: flex;
+	align-items: center;
 }
 
 #self-image {
-  width: 35vh;
-  height: 35vh;
-  border-radius: 50%;
-  padding: 12px;
-  background: linear-gradient(to bottom, black, yellow);
+	width: 35vh;
+	height: 35vh;
+	border-radius: 50%;
+	padding: 12px;
+	background: linear-gradient(to bottom, black, yellow);
 }
 
 #home-personal-details {
-  margin-left: 32px;
+	margin-left: 32px;
 }
 
 #home-intro-message-name {
-  background: linear-gradient(black, yellow);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+	background: linear-gradient(black, yellow);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 @keyframes wave {
-  0% { transform: rotate(0.0deg) }
-  10% { transform: rotate(14deg) }
-  20% { transform: rotate(-8deg) }
-  30% { transform: rotate(14deg) }
-  40% { transform: rotate(-4deg) }
-  50% { transform: rotate(10.0deg) }
-  60% { transform: rotate(0.0deg) }
-  100% { transform: rotate(0.0deg) }
+	0% {
+		transform: rotate(0deg);
+	}
+	10% {
+		transform: rotate(14deg);
+	}
+	20% {
+		transform: rotate(-8deg);
+	}
+	30% {
+		transform: rotate(14deg);
+	}
+	40% {
+		transform: rotate(-4deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	60% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
 }
 
 #home-intro-message-waving-hand {
-  animation: wave 2.5s linear infinite;
-  transform-origin: bottom;
-  display: inline-block;
-  margin-left: 16px;
+	animation: wave 2.5s linear infinite;
+	transform-origin: bottom;
+	display: inline-block;
+	margin-left: 16px;
 }
 
 #home-details-list {
-  margin: 8px 0 16px 8px;
-  padding: 0;
-  line-height: 1.75;
+	margin: 8px 0 16px 8px;
+	padding: 0;
+	line-height: 1.75;
 }
 
 #home-details-list > .list-item {
-  display: flex;
-  transition: transform 150ms ease-in;
-  cursor: default;
-  font-size: 1.2rem;
+	display: flex;
+	transition: transform 150ms ease-in;
+	cursor: default;
+	font-size: 1.2rem;
 }
 
 #home-details-list > .list-item > a {
-  color: inherit;
-  text-decoration: none;
-  display: flex;
+	color: inherit;
+	text-decoration: none;
+	display: flex;
 }
 
 #home-details-list > .list-item .list-item-icon {
-  margin-right: 16px;
-  font-size: 1.5rem;
+	margin-right: 16px;
+	font-size: 1.5rem;
 }
 
 #home-details-list > .list-item .list-item-text {
-  display: inline-flex;
-  align-items: center;
-  transition: color 150ms ease-in;
+	display: inline-flex;
+	align-items: center;
+	transition: color 150ms ease-in;
 }
 
 #home-details-list > .list-item:hover {
-  transform: translateY(-4px);
+	transform: translateY(-4px);
 }
 
 #home-social-media-links {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 #home-social-media-links > a {
-  text-decoration: none;
-  font-size: 0;
+	text-decoration: none;
+	font-size: 0;
 }
 
 #home-social-media-links > a > svg {
-  width: 40px;
-  height: 40px;
-  transition: fill 150ms ease-in;
-  fill: var(--text-color);
+	width: 40px;
+	height: 40px;
+	transition: fill 150ms ease-in;
+	fill: var(--text-color);
 }
 
 #facebook-icon:hover {
-  fill: #4267B2;
+	fill: #4267b2;
 }
 
 #github-icon:hover {
-  fill: var(--github-icon-hover-fill);
+	fill: var(--github-icon-hover-fill);
 }
 
 #linkedin-icon:hover {
-  fill: #0077B5;
+	fill: #0077b5;
 }
 
 #twitter-icon:hover {
-  fill: #1DA1F2;
+	fill: #1da1f2;
 }
 
 #know-more-link-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 24px;
 }
 
 #know-more-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: inherit;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: inherit;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 500;
 }
 
 #circled-arrow-container {
-  margin-left: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-  height: 48px;
+	margin-left: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 48px;
+	height: 48px;
 }
 
 #circles-svg {
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  inset: 0;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	inset: 0;
 }
 
 #arrow-svg {
-  width: 18px;
-  height: 18px;
-  transition: transform 150ms ease-in;
-  fill: var(--text-color);
+	width: 18px;
+	height: 18px;
+	transition: transform 150ms ease-in;
+	fill: var(--text-color);
 }
 
 #know-more-link:hover #arrow-svg {
-  transform: translateY(3px);
+	transform: translateY(3px);
 }
 
 #circles-svg > #default-circle {
-  fill: transparent;
-  stroke: var(--know-more-link-default-stroke);
-  stroke-width: 2;
+	fill: transparent;
+	stroke: var(--know-more-link-default-stroke);
+	stroke-width: 2;
 }
 
 #circles-svg > #hover-circle {
-  transform: rotate(-90deg);
-  transform-origin: center;
-  fill: transparent;
-  stroke: var(--text-color);
-  stroke-width: 2;
-  stroke-dasharray: 139;
-  stroke-dashoffset: 139;
-  transition: stroke-dashoffset 0.3s linear;
+	transform: rotate(-90deg);
+	transform-origin: center;
+	fill: transparent;
+	stroke: var(--text-color);
+	stroke-width: 2;
+	stroke-dasharray: 139;
+	stroke-dashoffset: 139;
+	transition: stroke-dashoffset 0.3s linear;
 }
 
 #know-more-link:hover #hover-circle {
-  stroke-dashoffset: 0;
+	stroke-dashoffset: 0;
 }

@@ -1,26 +1,32 @@
 #skills-list-container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 #skills-list {
-  display: flex;
-  width: 50%;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 28px;
+	display: flex;
+	width: 65%;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 28px;
 }
 
 #skills-list > .skill-item {
-  background-color: var(--card-bg);
-  cursor: default;
-  font-size: 1.3rem;
-  border-radius: 10px;
-  padding: 8px 14px;
-  box-shadow: var(--card-shadow);
-  transition: all 150ms ease-in;
+	background-color: var(--card-bg);
+	cursor: default;
+	font-size: 1.3rem;
+	border-radius: 10px;
+	padding: 8px 14px;
+	box-shadow: var(--card-shadow);
+	transition: all 150ms ease-in;
 }
 
 #skills-list > .skill-item:hover {
-  transform: translateY(-4px);
+	transform: translateY(-4px);
+}
+
+@media (max-width: 1024px) {
+	#skills-list {
+		width: 80%;
+	}
 }
