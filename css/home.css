@@ -12,8 +12,8 @@
 }
 
 #self-image {
-	width: 35vh;
-	height: 35vh;
+	width: 350px;
+	height: 350px;
 	border-radius: 50%;
 	padding: 12px;
 	background: linear-gradient(to bottom, black, yellow);
@@ -196,4 +196,39 @@
 
 #know-more-link:hover #hover-circle {
 	stroke-dashoffset: 0;
+}
+
+@media (max-width: 768px) {
+	#home-section-content {
+		flex-direction: column;
+		padding-bottom: 0;
+	}
+
+	#home-personal-details {
+		display: flex;
+		flex-direction: column;
+		margin-left: 0;
+	}
+
+	#home-personal-details > h1,
+	#home-personal-details > h2 {
+		text-align: center;
+	}
+
+	#home-details-list {
+		margin-left: 0;
+		align-self: center;
+	}
+}
+
+@media (max-width: 1024px) {
+	#home-section {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	#self-image {
+		width: 280px;
+		height: 280px;
+	}
 }
