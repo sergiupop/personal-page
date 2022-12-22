@@ -30,3 +30,15 @@
 		width: 80%;
 	}
 }
+
+@media (max-width: 768px) {
+	#skills-list {
+		width: 90%;
+	}
+}
+
+@media (max-width: 480px) {
+	#skills-list {
+		width: 100%;
+	}
+}

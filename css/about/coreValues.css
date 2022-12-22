@@ -17,6 +17,7 @@
 	border-radius: 10px;
 	cursor: default;
 	transition: all 150ms ease-in;
+	box-sizing: border-box;
 }
 
 #core-values-list > .core-value-item:hover {
@@ -61,6 +62,6 @@
 	}
 
 	#core-values-list > .core-value-item {
-		width: 60%;
+		width: 100%;
 	}
 }

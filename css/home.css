@@ -251,3 +251,10 @@
 		align-self: center;
 	}
 }
+
+@media (max-width: 480px) {
+	#home-section {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
