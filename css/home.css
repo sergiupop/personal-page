@@ -198,10 +198,41 @@
 	stroke-dashoffset: 0;
 }
 
+@media (max-height: 640px) {
+	#home-section {
+		height: auto;
+	}
+
+	#home-section-content {
+		padding-top: 72px;
+	}
+}
+
+@media (max-width: 1024px) {
+	#home-section {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	#self-image {
+		width: 280px;
+		height: 280px;
+	}
+}
+
 @media (max-width: 768px) {
+	@media (max-height: 940px) {
+		#home-section {
+			height: auto;
+		}
+
+		#home-section-content {
+			padding-top: 72px;
+		}
+	}
+
 	#home-section-content {
 		flex-direction: column;
-		padding-bottom: 0;
 	}
 
 	#home-personal-details {
@@ -218,17 +249,5 @@
 	#home-details-list {
 		margin-left: 0;
 		align-self: center;
-	}
-}
-
-@media (max-width: 1024px) {
-	#home-section {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-
-	#self-image {
-		width: 280px;
-		height: 280px;
 	}
 }

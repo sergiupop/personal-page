@@ -83,7 +83,7 @@ footer {
 	cursor: pointer;
 	position: absolute;
 	top: 32px;
-	right: 64px;
+	right: 32px;
 	line-height: 1.5;
 	width: 3rem;
 	height: 3rem;
@@ -101,7 +101,7 @@ footer {
 	align-items: center;
 	justify-content: center;
 	bottom: 32px;
-	right: 64px;
+	right: 32px;
 	width: 3rem;
 	height: 3rem;
 }
