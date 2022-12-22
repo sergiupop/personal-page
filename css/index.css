@@ -6,6 +6,8 @@
 	--card-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.2);
 	--know-more-link-default-stroke: #d3d3d3;
 	--github-icon-hover-fill: #555;
+	--nameGradient: rgba(48, 2, 73, 1) 0%, rgba(9, 41, 121, 1) 58%,
+		rgba(0, 212, 255, 1) 100%;
 }
 
 .dark-theme {
@@ -13,10 +15,11 @@
 	--accent-text-color: #ccc;
 	--body-bg: #252525;
 	--card-bg: #555;
-	--card-shadow: 0 4px 8px 0 rgba(0, 255, 255, 0.7),
-		0 0 8px 0 rgba(0, 255, 255, 0.7);
+	--card-shadow: 0 4px 8px 0 rgba(0, 212, 255, 0.7),
+		0 0 8px 0 rgba(0, 212, 255, 0.7);
 	--know-more-link-default-stroke: #555;
 	--github-icon-hover-fill: #aaa;
+	--nameGradient: rgba(131, 77, 213, 1) 5%, rgba(9, 212, 255, 1) 100%;
 }
 
 html {
