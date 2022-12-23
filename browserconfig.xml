@@ -4,7 +4,7 @@
 		<tile>
 			<square70x70logo src="./favicons/favicon-70x70.png"/>
 			<square150x150logo src="./favicons/favicon-150x150.png"/>
-			<TileColor>#000000</TileColor>
+			<TileColor>#092979</TileColor>
 		</tile>
 	</msapplication>
 </browserconfig>
