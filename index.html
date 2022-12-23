@@ -10,10 +10,13 @@
 		<script src="./js/themeSwitch.js" defer></script>
 		<script src="./js/scroll.js" defer></script>
 		<title>Sergiu Pop</title>
+
+		<!-- generics -->
 		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="./favicons/apple-touch-icon.png"
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./favicons/favicon-16x16.png"
 		/>
 		<link
 			rel="icon"
@@ -21,13 +24,26 @@
 			sizes="32x32"
 			href="./favicons/favicon-32x32.png"
 		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="./favicons/favicon-16x16.png"
-		/>
+
+		<!-- Android -->
 		<link rel="manifest" href="./site.webmanifest" />
+
+		<!-- iOS -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./favicons/apple-touch-icon.png"
+		/>
+
+		<!-- Windows 8 IE 10-->
+		<meta name="msapplication-TileColor" content="#888888" />
+		<meta
+			name="msapplication-TileImage"
+			content="./favicons/favicon-144x144.png"
+		/>
+
+		<!-- Windows 8.1 + IE11 and above -->
+		<meta name="msapplication-config" content="./browserconfig.xml" />
 	</head>
 	<body>
 		<button id="theme-switch" onclick="switchTheme()">
